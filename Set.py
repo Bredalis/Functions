@@ -16,7 +16,7 @@ nombres_2.add("Jose")
 
 nombres_2.remove("Luis")
 
-# Concatenacion
+# Union o merge
 
 nombres = nombres_1.union(nombres_2)
 

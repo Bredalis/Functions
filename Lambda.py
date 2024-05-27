@@ -7,10 +7,13 @@ constante = lambda x: x
 
 datos_de_personas = [("Juan", 89, 5), ("Lucia", 45, 10), ("Pedro", 23, 30)]
 
+print("Estructura de datos:")
 print("Lista Desordenada:", datos_de_personas)
+
 datos_de_personas.sort(key = lambda persona: persona[1])
 print("Lista Ordenada:", datos_de_personas)
 
-print("\nSuma:", suma(2, 3))
+print("\nOperaciones:")
+print("Suma:", suma(2, 3))
 print("Multiplicacion:", multiplicacion(1, 2, 3))
 print("Constante:", constante(3))
