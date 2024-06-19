@@ -7,22 +7,22 @@ class BuscadorDePalabras:
 		self.cadena = input("Introduce una cadena de texto: ")
 		self.texto_buscar = input("Introduce el texto que quieres buscar: ")
 
-	def buscar(self):
+	def encontrar_palabra(self):
+		buscar_palabra = re.search(self.texto_buscar, self.cadena)
 
-		# Si se encontro la palabra o no
-
-		if re.search(self.texto_buscar, self.cadena) is not None:
-			print(f"Hemos encontrado la palabra: {self.texto_buscar}")
-
-		else:
+		if buscar_palabra is None:
 			print(f"No hemos encontrado la palabra: {self.texto_buscar}")
+			return
 
-	def imprimir(self):
-		print(f"Veces que se repite la palabra {self.texto_buscar}: {len(re.findall(self.texto_buscar, self.cadena))}")
+		print(f"Hemos encontrado la palabra: {self.texto_buscar}")
+
+	def cantidad_palabra(self):
+		veces_palabra = len(re.findall(self.texto_buscar, self.cadena))
+		print(f"Veces que se repite la palabra {self.texto_buscar}: {veces_palabra}")
 
 if __name__ == "__main__":
 
 	clase = BuscadorDePalabras()
 
-	clase.buscar()
-	clase.imprimir()
+	clase.encontrar_palabra()
+	clase.cantidad_palabra()
