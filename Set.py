@@ -24,10 +24,10 @@ print("\nSet 2:", nombres_2)
 print("Union de Sets:", nombres)
 
 ambos_nombres = nombres_1.intersection(nombres_2)
-print("\nDatos comunes del Set:", ambos_nombres)
+print("\nDatos comunes de los Sets:", ambos_nombres)
 
 sin_repetidos = nombres.difference(ambos_nombres)
-print(sin_repetidos)
+print("Datos sin repiten en los Sets:", sin_repetidos)
 
 print("\nSi hay subconjuntos:", nombres_2.issubset(nombres))
 print("Si es un super Set:", nombres.issuperset(nombres_2))

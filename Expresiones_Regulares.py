@@ -11,8 +11,7 @@ class BuscadorDePalabras:
 		buscar_palabra = re.search(self.texto_buscar, self.cadena)
 
 		if buscar_palabra is None:
-			print(f"No hemos encontrado la palabra: {self.texto_buscar}")
-			return
+			return f"No hemos encontrado la palabra: {self.texto_buscar}"
 
 		print(f"Hemos encontrado la palabra: {self.texto_buscar}")
 
