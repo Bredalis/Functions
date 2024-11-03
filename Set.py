@@ -1,33 +1,30 @@
 
-# El conjunto Set
-
+# Ejemplo de uso de conjuntos (set)
 nombres_1 = {"Juan", "Pedro", "Juan", "Pedro"}
 nombres_2 = {"Luis", "Maria", "Rosa"}
 
 print("Sets:", nombres_1, nombres_2)
 print("Tipos:", type(nombres_1), type(nombres_2))
 
-# Agregar datos
-
+# Agregar elementos
 nombres_1.add("Luis")
 nombres_2.add("Jose")
 
-# Borrar
-
+# Borrar un elemento
 nombres_2.remove("Luis")
 
-# Union o merge
-
+# Unión de conjuntos
 nombres = nombres_1.union(nombres_2)
 
 print("\nSet 2:", nombres_2)
-print("Union de Sets:", nombres)
+print("Unión de sets:", nombres)
 
+# Operaciones con conjuntos
 ambos_nombres = nombres_1.intersection(nombres_2)
-print("\nDatos comunes de los Sets:", ambos_nombres)
+print("\nDatos comunes de los sets:", ambos_nombres)
 
 sin_repetidos = nombres.difference(ambos_nombres)
-print("Datos sin repiten en los Sets:", sin_repetidos)
+print("Datos sin repiten en los sets:", sin_repetidos)
 
-print("\nSi hay subconjuntos:", nombres_2.issubset(nombres))
-print("Si es un super Set:", nombres.issuperset(nombres_2))
+print("\n¿Es un subconjunto?:", nombres_2.issubset(nombres))
+print("¿Es un superconjunto?:", nombres.issuperset(nombres_2))

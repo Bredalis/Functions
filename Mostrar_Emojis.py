@@ -1,6 +1,5 @@
 
 # Imprimir distintos emojis
-
 print("1 - \U0001F602")
 print("10 - \U0001F601")
 print("11 - \U0001F603")
