@@ -4,7 +4,7 @@ suma = lambda a, b: a + b
 multiplicacion = lambda a, b, c: a * b * c
 constante = lambda x: x
 
-datos_de_personas = [("Juan", 89, 5), ("Lucia", 45, 10), ("Pedro", 23, 30)]
+datos_de_personas = [("Juan", 89, 5), ("Lucía", 45, 10), ("Pedro", 23, 30)]
 
 print("Estructura de datos:")
 print("Lista desordenada:", datos_de_personas)
