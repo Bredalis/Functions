@@ -1,17 +1,18 @@
 
-def decorador(funcion):
-	"""Decora una función, mostrando un mensaje de inicio y fin."""
-	
-	def decorador_interno():
-		print("Inicio")
-		funcion()
-		print("Final")
+def decorator(function):
+    """Decorates a function, showing a start and end message"""
+    def inner_decorator():
+        print("Start")
+        function()
+        print("End")
 
-	return decorador_interno
+    return inner_decorator
 
-@decorador
-def suma():
-	"""Imprime el resultado de la suma 1 + 2."""
-	print(1 + 2)
 
-suma()
+@decorator
+def addition():
+    """Prints the result of the addition 1 + 2"""
+    print(1 + 2)
+
+
+addition()

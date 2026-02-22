@@ -1,30 +1,30 @@
 
-# Ejemplo de uso de conjuntos (set)
-nombres_1 = {"Juan", "Pedro", "Juan", "Pedro"}
-nombres_2 = {"Luis", "Maria", "Rosa"}
+# Example of set usage
+names_1 = {"Juan", "Pedro", "Juan", "Pedro"}
+names_2 = {"Luis", "Maria", "Rosa"}
 
-print("Sets:", nombres_1, nombres_2)
-print("Tipos:", type(nombres_1), type(nombres_2))
+print("Sets:", names_1, names_2)
+print("Types:", type(names_1), type(names_2))
 
-# Agregar elementos
-nombres_1.add("Luis")
-nombres_2.add("Jose")
+# Add elements
+names_1.add("Luis")
+names_2.add("Jose")
 
-# Borrar un elemento
-nombres_2.remove("Luis")
+# Remove an element
+names_2.remove("Luis")
 
-# Unión de conjuntos
-nombres = nombres_1.union(nombres_2)
+# Union of sets
+names = names_1.union(names_2)
 
-print("\nSet 2:", nombres_2)
-print("Unión de sets:", nombres)
+print("\nSet 2:", names_2)
+print("Union of sets:", names)
 
-# Operaciones con conjuntos
-ambos_nombres = nombres_1.intersection(nombres_2)
-print("\nDatos comunes de los sets:", ambos_nombres)
+# Set operations
+both_names = names_1.intersection(names_2)
+print("\nCommon data in sets:", both_names)
 
-sin_repetidos = nombres.difference(ambos_nombres)
-print("Datos sin repiten en los sets:", sin_repetidos)
+without_duplicates = names.difference(both_names)
+print("Data not repeating in sets:", without_duplicates)
 
-print("\n¿Es un subconjunto?:", nombres_2.issubset(nombres))
-print("¿Es un superconjunto?:", nombres.issuperset(nombres_2))
+print("\nIs it a subset?:", names_2.issubset(names))
+print("Is it a superset?:", names.issuperset(names_2))

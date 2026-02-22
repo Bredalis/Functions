@@ -1,28 +1,30 @@
 
 import re
 
-class BuscadorDePalabras:
-	"""Clase para buscar una palabra en una cadena de texto y contar su frecuencia."""
-	
-	def __init__(self):
-		self.cadena = input("Introduce una cadena de texto: ")
-		self.texto_buscar = input("Introduce el texto que quieres buscar: ")
 
-	def encontrar_palabra(self):
-		"""Buscar una palabra en la cadena y muestra un mensaje si se encuentra."""
-		resultado = re.search(self.texto_buscar, self.cadena)
+class WordSearcher:
+    """Class to search for a word in a text string and count its frequency"""
 
-		if resultado is None:
-			return f"No hemos encontrado la palabra: {self.texto_buscar}"
+    def __init__(self):
+        self.text = input("Enter a text string: ")
+        self.search_text = input("Enter the text you want to search for: ")
 
-		print(f"Hemos encontrado la palabra: {self.texto_buscar}")
+    def find_word(self):
+        """Search for a word in the string and display a message if found"""
+        result = re.search(self.search_text, self.text)
 
-	def cantidad_palabra(self):
-		"""Cuenta cuántas veces se repite la palabra en la cadena."""
-		frecuencia = len(re.findall(self.texto_buscar, self.cadena))
-		print(f"Veces que se repite la palabra '{self.texto_buscar}': {frecuencia}")
+        if result is None:
+            return f"We did not find the word: {self.search_text}"
+
+        print(f"We found the word: {self.search_text}")
+
+    def count_word(self):
+        """Count how many times the word appears in the string"""
+        frequency = len(re.findall(self.search_text, self.text))
+        print(f"Times the word '{self.search_text}' appears: {frequency}")
+
 
 if __name__ == "__main__":
-	buscador = BuscadorDePalabras()
-	buscador.encontrar_palabra()
-	buscador.cantidad_palabra()
+    searcher = WordSearcher()
+    searcher.find_word()
+    searcher.count_word()

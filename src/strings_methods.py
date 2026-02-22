@@ -1,17 +1,22 @@
 
-# Métodos de strings más usados
-cadena_texto = "Hola, Mundo"
+# Most used string methods
+text_string = "Hello, World"
 
-print("Capitalize:", cadena_texto.capitalize())
-print("Casefold:", cadena_texto.casefold())
-print("Count:", cadena_texto.count("o"))
-print("Find:", cadena_texto.find("Hola"))
-print("Index:", cadena_texto.index("Mundo"))
-print("Isalnum:", cadena_texto.isalnum())
-print("Isalpha:", cadena_texto.isalpha())
-print("Isascii:", cadena_texto.isascii())
-print("Isdecimal:", cadena_texto.isdecimal())
-print("Isdigit:", cadena_texto.isdigit())
-print("Islower:", cadena_texto.islower())
-print("Isnumeric:", cadena_texto.isnumeric())
-print("Isprintable:", cadena_texto.isprintable())
+methods = [
+    ("Capitalize", text_string.capitalize()),
+    ("Casefold", text_string.casefold()),
+    ("Count 'o'", text_string.count("o")),
+    ("Find 'Hello'", text_string.find("Hello")),
+    ("Index 'World'", text_string.index("World")),
+    ("Isalnum", text_string.isalnum()),
+    ("Isalpha", text_string.isalpha()),
+    ("Isascii", text_string.isascii()),
+    ("Isdecimal", text_string.isdecimal()),
+    ("Isdigit", text_string.isdigit()),
+    ("Islower", text_string.islower()),
+    ("Isnumeric", text_string.isnumeric()),
+    ("Isprintable", text_string.isprintable()),
+]
+
+for name, result in methods:
+    print(f"{name}: {result}")

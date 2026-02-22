@@ -1,17 +1,19 @@
 
-def decorador(funcion):
-	"""Decora una función, mostrando un mensaje de inicio y fin."""
+def decorator(function):
+    """Decorates a function, showing a start and end message"""
 
-	def decorador_interno(parametro_1, parametro_2):
-		print("Inicio")
-		funcion(parametro_1, parametro_2)
-		print("Final")
+    def inner_decorator(parameter_1, parameter_2):
+        print("Start")
+        function(parameter_1, parameter_2)
+        print("End")
 
-	return decorador_interno
+    return inner_decorator
 
-@decorador
-def potencia(base, exponente):
-	"""Imprime el resultado de elevar la base al exponente."""
-	print(pow(base, exponente))
 
-potencia(1, 8)
+@decorator
+def power(base, exponent):
+    """Prints the result of raising base to the exponent"""
+    print(pow(base, exponent))
+
+
+power(1, 8)

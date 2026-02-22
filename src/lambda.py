@@ -1,19 +1,20 @@
 
-# Funciones anónimas (Lambda)
-suma = lambda a, b: a + b
-multiplicacion = lambda a, b, c: a * b * c
-constante = lambda x: x
+# Anonymous functions (Lambda)
 
-datos_de_personas = [("Juan", 89, 5), ("Lucía", 45, 10), ("Pedro", 23, 30)]
+addition = (lambda a, b: a + b)
+multiplication = (lambda a, b, c: a * b * c)
+constant = (lambda x: x)
 
-print("Estructura de datos:")
-print("Lista desordenada:", datos_de_personas)
+people_data = [("Juan", 89, 5), ("Lucía", 45, 10), ("Pedro", 23, 30)]
 
-# Ordenar la lista de personas por la segundo posición (edad)
-datos_de_personas.sort(key = lambda persona: persona[1])
-print("Lista ordenada:", datos_de_personas)
+print("Data structure:")
+print("Unsorted list:", people_data)
 
-print("\nOperaciones:")
-print("Suma:", suma(2, 3))
-print("Multiplicación:", multiplicacion(1, 2, 3))
-print("Constante:", constante(3))
+# Sort the list of people by the second position (age)
+people_data.sort(key=lambda person: person[1])
+print("Sorted list:", people_data)
+
+print("\nOperations:")
+print("Addition:", addition(2, 3))
+print("Multiplication:", multiplication(1, 2, 3))
+print("Constant:", constant(3))
